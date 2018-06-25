@@ -15,10 +15,10 @@ const selectIcon = (icon) => {
 
 }
 
-const TakeSnapBtn = ({iconName, onPress}) => {
+const TakeSnapBtn = ({iconName, color, onPress}) => {
   return (
     <TouchableOpacity style={styles.touchable} onPress={onPress}>
-      <MaterialIcons  name={iconName} size={45} color="white" />      
+      <MaterialIcons  name={iconName} size={45} color={color} />      
     </TouchableOpacity>
   )
 }
