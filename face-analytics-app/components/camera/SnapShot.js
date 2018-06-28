@@ -1,7 +1,8 @@
 import React from 'react'
 import {
   Text,
-  View
+  View,
+  Vibration
 } from 'react-native'
 import { Camera, Permissions } from 'expo'
 import { kairosDetect } from '../../api/kairos'
@@ -17,7 +18,8 @@ class SnapShot extends React.Component {
       hasCameraPermission: false,
       type: Camera.Constants.Type.back,
       showSnapBtn: false,
-      isLoading: false
+      isLoading: false,
+      isVibrating: false
     }
     this.camera = null
     this.onFlip = this.onFlip.bind(this)
@@ -27,9 +29,12 @@ class SnapShot extends React.Component {
 
   faceDetector (facesData) {
     if(facesData.faces.length > 0) {
-      this.setState({showSnapBtn: true})
+      if(!this.state.isVibrating) {
+        Vibration.vibrate(100)
+      }      
+      this.setState({showSnapBtn: true, isVibrating: true})
     } else {
-      this.setState({showSnapBtn: false})            
+      this.setState({showSnapBtn: false, isVibrating: false})
     }
   }
 
@@ -42,18 +47,19 @@ class SnapShot extends React.Component {
   }
 
   async takeSnap () {
+    const { navigation } = this.props
     if(this.camera) {
       let photo = await this.camera.takePictureAsync({base64: true})
       this.setState({isLoading: true})
-
       const handleResponse = (error, response) => {
         if (error) {
           console.warn(error.message)
+        } else {
+          this.setState({isLoading: false})
+          navigation.navigate('Summary', {images: response.body.images, photo: photo})
         }
-        console.warn(response.body)        
       }
-
-      //kairosDetect(photo.base64, handleResponse)      
+      kairosDetect(photo.base64, handleResponse)   
     }
   }
 
