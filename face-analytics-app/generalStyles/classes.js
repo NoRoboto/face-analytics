@@ -1,3 +1,5 @@
+import { Constants } from 'expo'
+
 export default {
   container: {
     flex: 1,
@@ -10,7 +12,15 @@ export default {
   },
   sectionText: {
     color: '#FFFFFF',
-    fontSize: 30,
+    fontSize: 25  
+  },
+  layout: {
+    paddingTop: Constants.statusBarHeight + 20,
+    padding: (0, 15, 15, 15),
+  },
+  title: {
+    color: '#FFFFFF',
+    fontSize: 35,
     fontWeight: 'bold'
   }
 }
