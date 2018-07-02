@@ -2,19 +2,24 @@ import colors from '../../generalStyles/colors'
 import classes from '../../generalStyles/classes'
 
 export default {
-  wrapper: {},
+  wrapper: {flex:1, justifyContent:"center"},
   slide1: {
-    ...classes.container,
+    ...classes.wrapper,
+    ...classes.layout,
     backgroundColor: colors.primaryColor,
   },
   slide2: {
-    ...classes.container,
+    ...classes.wrapper,
+    ...classes.layout,
     backgroundColor: colors.secondaryColor,
   },
-  slide3: {
-    ...classes.container,
-    backgroundColor: colors.tertiaryColor,
-  },
   text: classes.sectionText,
-  activeDotColor: "#FFFFFF"
+  activeDotColor: "#FFFFFF",
+  title: classes.title,
+  button: {
+    alignSelf: 'flex-end'
+  },
+  buttonText: {
+    fontSize: 35
+  }
 }
