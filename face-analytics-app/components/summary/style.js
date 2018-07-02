@@ -1,6 +1,6 @@
 import colors from '../../generalStyles/colors'
 import classes from '../../generalStyles/classes'
-import {Constants} from 'expo'
+import { Constants } from 'expo'
 
 export default {
   summary: {
