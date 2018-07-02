@@ -56,7 +56,7 @@ class SnapShot extends React.Component {
           console.warn(error.message)
         } else {
           this.setState({isLoading: false})
-          navigation.navigate('Summary', {images: response.body.images, photo: photo})
+          navigation.replace('Summary', {images: response.body.images, photo: photo})
         }
       }
       kairosDetect(photo.base64, handleResponse)   
@@ -70,7 +70,6 @@ class SnapShot extends React.Component {
 
   render () {
     const { hasCameraPermission, type, showSnapBtn, isLoading } = this.state
-
     if (isLoading)
       return (<Loader />)
 
