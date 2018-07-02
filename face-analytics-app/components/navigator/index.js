@@ -14,6 +14,6 @@ export default createStackNavigator({
   Summary,
   SnapShot
 }, {
-  initialRouteName: 'SnapShot',
+  initialRouteName: 'Welcome',
   headerMode: 'none'
 })
