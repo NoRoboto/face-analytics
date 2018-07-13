@@ -30,10 +30,9 @@ Simple React Native kairos api integration. Kairos provides a  free I.A  face an
 
 #### <i class="icon-list"></i> We need
 
-> - [Nodejs](https://nodejs.org/en/) = 8.x.x (it does not work in node 10)
+> - [Nodejs](https://nodejs.org/en/) => 8.x.x
 > - [NPM](https://www.npmjs.com/) >= 5.x.x 
 > - (Optional) [Yarn](https://yarnpkg.com/en/)
-> - Bluetooth
 
 add a new file called config.js in api folder, then add your api key and app key, like this:
 
