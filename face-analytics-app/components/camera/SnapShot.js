@@ -56,7 +56,7 @@ class SnapShot extends React.Component {
           console.warn(error.message)
         } else {
           this.setState({isLoading: false})
-          navigation.replace('Summary', {images: response.body.images, photo: photo})
+          navigation.replace('Welcome', {images: response.body.images, photo: photo})
         }
       }
       kairosDetect(photo.base64, handleResponse)   
