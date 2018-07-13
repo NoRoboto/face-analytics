@@ -6,12 +6,17 @@ export default {
   slide1: {
     ...classes.wrapper,
     ...classes.layout,
-    backgroundColor: colors.primaryColor,
+    backgroundColor: colors.primaryColor
   },
   slide2: {
     ...classes.wrapper,
     ...classes.layout,
-    backgroundColor: colors.secondaryColor,
+    backgroundColor: colors.secondaryColor
+  },
+  slide3: {
+    ...classes.wrapper,
+    ...classes.layout,
+    backgroundColor: colors.tertiaryColor
   },
   text: classes.sectionText,
   activeDotColor: "#FFFFFF",
