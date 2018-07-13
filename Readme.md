@@ -17,9 +17,7 @@ React native integration with <a href="https://www.kairos.com">Kairos API</a> :o
 - [Requirements](#requirements)
 - [Install](#install)
 - [Features](#features)
-- [Scripts List]()
-  - [slider-remote-control (keybord actions)](https://github.com/NoRoboto/mi-band2-scripts/tree/master/keyboard)
-  - [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgments)
 - [License](#license)
 
 ## Introduction
