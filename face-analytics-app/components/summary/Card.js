@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
-import { Card } from 'react-native-elements'
+import { View, Image } from 'react-native'
+import { Card, ListItem } from 'react-native-elements'
 import styles from './style'
 
 const SummaryCard = (props) => {
@@ -10,23 +10,23 @@ const SummaryCard = (props) => {
         {
           images[0].faces.map((u, i) => {
             return (
-              <Card key={i} titleStyle={styles.cardTitle} title="Analysis Summary" containerStyle={styles.cardWidth}>
+              <Card 
+                key={i} 
+                titleStyle={styles.cardTitle} 
+                title="Analysis Summary" 
+              >
                 <View style={styles.centerX}>
                   <Image
                     style={styles.cardImage}
                     resizeMode="cover"
                     source={{ uri: photo.uri }}
                   />
-                </View>
-                <View>
-                  <Text>Age: {u.attributes.age}</Text>
-                  <Text>
-                    Ethnicity: (asian: {u.attributes.asian} - hispanic: {u.attributes.hispanic} )
-                  </Text>
-                  <Text>Skin colour: (black: {u.attributes.black} - white: {u.attributes.white} )</Text>
-                  <Text>Gender: {u.attributes.gender.type} </Text>
-                  <Text>Glasses: {u.attributes.glasses} </Text>
-                </View>
+                </View>                
+                <ListItem title="Age" subtitle={u.attributes.age} leftIcon={{ name: "today" }} chevron={true}/>
+                <ListItem title="Ethnicity" subtitle={`(asian: ${u.attributes.asian} - hispanic ${u.attributes.hispanic})`} leftIcon={{ name: "people-outline" }} chevron={false} />
+                <ListItem title="Skin" subtitle={`(${u.attributes.black} - white: ${u.attributes.white})`} leftIcon={{ name: "pan-tool" }} chevron={false} />
+                <ListItem title="Gender" subtitle={` ${u.attributes.gender.type}`} leftIcon={{ name: "wc" }} chevron={false} />
+                <ListItem title="Glasses" subtitle={`${u.attributes.glasses}`} leftIcon={{ name: "face" }} chevron={false} />                
               </Card>
             )
           })
