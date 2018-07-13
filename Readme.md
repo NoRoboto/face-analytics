@@ -1,11 +1,11 @@
 
 <h1 align="center"> Face analytics </h1> <br>
-<div align="center">
-<figure>
+<p align="center">
   <img alt="gif xiaomi band and slide" title="mi band 2 script pc" src="https://raw.githubusercontent.com/NoRoboto/face-analytics/master/faces-header.jpg?token=AID74VSaC19ff-CQ99sD71EpwISCWWIlks5bUlAhwA%3D%3D" width="450">
-  <figcaption>Jdmoar - # Happy Selfie <a href="https://www.flickr.com/photos/jdmoar/">flickr<a/></figcaption>
-  </figure>
-</div>
+</p>
+<p align="center">
+Jdmoar - # Happy Selfie <a href="https://www.flickr.com/photos/jdmoar/">flickr<a/>
+</p>
 
 <p align="center">
 React native integration with <a href="https://www.kairos.com">Kairos API</a> `:women:` `:men:` `:older_man:`
