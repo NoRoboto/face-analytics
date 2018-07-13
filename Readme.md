@@ -8,7 +8,7 @@ Jdmoar - # Happy Selfie <a href="https://www.flickr.com/photos/jdmoar/">flickr<a
 </p>
 
 <p align="center">
-React native integration with <a href="https://www.kairos.com">Kairos API</a> :women: :men: :older_man:
+React native integration with <a href="https://www.kairos.com">Kairos API</a> :older_man:
 </p>
 
 ## Table of Contents
