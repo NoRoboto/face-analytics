@@ -17,12 +17,13 @@ React native integration with <a href="https://www.kairos.com">Kairos API</a> :o
 - [Requirements](#requirements)
 - [Install](#install)
 - [Features](#features)
+- [WIP](#wip)
 - [Acknowledgments](#acknowledgments)
 - [License](#license)
 
 ## Introduction
 
-Simple React Native kairos api integration. Kairos provides a  free I.A  face analysis, take a selfie and see the result [Security & Privacy](https://www.kairos.com/faq#security-privacy)
+Simple React Native kairos api integration. Kairos provides a free I.A  face analysis, take a selfie and see the result (ios - android) [Security & Privacy](https://www.kairos.com/faq#security-privacy)
 
 ## Requirements
 
@@ -30,7 +31,9 @@ Simple React Native kairos api integration. Kairos provides a  free I.A  face an
 
 > - [Nodejs](https://nodejs.org/en/) => 8.x.x
 > - [NPM](https://www.npmjs.com/) >= 5.x.x 
+> - [Expo client app](https://play.google.com/store/apps/details?id=host.exp.exponent) 
 > - (Optional) [Yarn](https://yarnpkg.com/en/)
+
 
 add a new file called config.js in api folder, then add your api key and app key, like this:
 
@@ -58,6 +61,11 @@ to run: yarn start or npm start
  4. Free usage.
  5. Detect multiple faces.
  6. Data summary: Age, Ethnicity, Skin, Gender, Glasses.
+
+## WIP
+
+ 1. Itroduction text, helpers.
+ 2. Some animations.
 
 ## Acknowledgments
 
